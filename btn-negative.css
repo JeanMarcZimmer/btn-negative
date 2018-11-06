@@ -1,0 +1,34 @@
+/*
+** Author: Jean-Marc Zimmer
+** Licence: MIT
+*/
+
+.btn-negative,
+.btn-outline-negative.active,
+.btn-outline-negative:hover:not(.disabled),
+.btn-outline-negative:active:not(.disabled) {
+    background-color: var(--neg-color);
+    color: var(--bg-color);
+}
+
+.btn-negative.active,
+.btn-negative:hover:not(.disabled),
+.btn-negative:active:not(.disabled) {
+    background-color: var(--color2);
+}
+
+.btn-negative.active:hover,
+.btn-negative:hover:active:not(.disabled) {
+    background-color: var(--color3);
+}
+
+.btn-negative:focus,
+.btn-outline-negative:focus {
+    box-shadow: 0 0 0 .2rem var(--neg-shadow-color);
+}
+
+.btn-outline-negative {
+    background-color: var(--bg-color);
+    border: solid 1px var(--neg-color);
+    color: var(--neg-color);
+}

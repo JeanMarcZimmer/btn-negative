@@ -5,30 +5,32 @@
 
 .btn-negative,
 .btn-outline-negative.active,
-.btn-outline-negative:hover:not(.disabled),
-.btn-outline-negative:active:not(.disabled) {
-    background-color: var(--neg-color);
-    color: var(--bg-color);
+.btn-outline-negative:hover:not(.disabled):not([disabled]),
+.btn-outline-negative:active:not(.disabled):not([disabled]) {
+    background-color: var(--btn-negative-color1);
+    color: var(--btn-negative-color0);
 }
 
 .btn-negative.active,
-.btn-negative:hover:not(.disabled),
-.btn-negative:active:not(.disabled) {
-    background-color: var(--color2);
+.btn-negative:hover:not(.disabled):not([disabled]),
+.btn-negative:active:not(.disabled):not([disabled]) {
+    background-color: var(--btn-negative-color2);
+    color: var(--btn-negative-color1);
 }
 
 .btn-negative.active:hover,
-.btn-negative:hover:active:not(.disabled) {
-    background-color: var(--color3);
+.btn-negative:hover:active:not(.disabled):not([disabled]) {
+    background-color: var(--btn-negative-color3);
+    color: var(--btn-negative-color1);
 }
 
 .btn-negative:focus,
 .btn-outline-negative:focus {
-    box-shadow: 0 0 0 .2rem var(--neg-shadow-color);
+    box-shadow: 0 0 0 .2rem var(--btn-negative-shadow-color);
 }
 
 .btn-outline-negative {
-    background-color: var(--bg-color);
-    border: solid 1px var(--neg-color);
-    color: var(--neg-color);
+    background-color: var(--btn-negative-color0);
+    border: solid 1px var(--btn-negative-color1);
+    color: var(--btn-negative-color1);
 }

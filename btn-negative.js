@@ -37,11 +37,11 @@ $(function() {
     var bgColor = hexify(getParentBackground($(this).parent()));
     var color = hexify(getParentColor($(this).parent()));
     var rgb = getParentColor($(this).parent());
-    this.style.setProperty('--bg-color', bgColor);
-    this.style.setProperty('--neg-color', color);
-    this.style.setProperty('--neg-shadow-color', color + "88");
-    this.style.setProperty('--color2', hexify(darken(rgb)));
-    this.style.setProperty('--color3', hexify(darken(darken(rgb))));
+    this.style.setProperty('--btn-negative-color0', bgColor);
+    this.style.setProperty('--btn-negative-color1', color);
+    this.style.setProperty('--btn-negative-shadow-color', color + "88");
+    this.style.setProperty('--btn-negative-color2', hexify(darken(rgb)));
+    this.style.setProperty('--btn-negative-color3', hexify(darken(darken(rgb))));
   });
 
 });
